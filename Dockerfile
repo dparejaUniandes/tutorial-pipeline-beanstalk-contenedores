@@ -1,7 +1,4 @@
-FROM public.ecr.aws/docker/library/alpine:3.20
-
-RUN apk add py3-pip \
-    && pip install --upgrade pip
+FROM python:3.10-slim
 
 WORKDIR /app
 COPY . /app/
